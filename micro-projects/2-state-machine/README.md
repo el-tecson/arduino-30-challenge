@@ -16,7 +16,7 @@
 - Press classification:
     - Click = Change state by 1
     - Double-Click = Change state to last state
-    - Blue = Change state to 0
+    - Hold = Change state to 0
 
 ## Solution
 - See the [code I made for this project](./solution.ino)
