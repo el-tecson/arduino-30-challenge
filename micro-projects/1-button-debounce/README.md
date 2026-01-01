@@ -4,8 +4,11 @@
 * Output: LED / serial
 * Detect short, long, double press
 
+## Circuit
+![Circuit](./circuit.png)
+
 ## Schematics
-![Schematics](./schematics.png)
+![Schematics](./schematics.jpg)
 
 ## Demo
 ![Video Demonstration](./demo.gif)
