@@ -12,10 +12,9 @@ int curIndex = 0;
 bool justPressed = false;
 bool doubleClicked = false;
 int buttonState = LOW;
-bool firstEncounter = true;
 
 void setup() {
-  pinMode(BUTTON_PIN, INPUT);
+  pinMode(BUTTON_PIN, INPUT_PULLUP);
   pinMode(LED_PIN0, OUTPUT);
   pinMode(LED_PIN1, OUTPUT);
   pinMode(LED_PIN2, OUTPUT);
@@ -26,11 +25,17 @@ void lightUp(int ledNum);
 void loop() {
   buttonState = digitalRead(BUTTON_PIN);
   currentMillis = millis();
-  if (buttonState == HIGH) {
+  if (buttonState == LOW) {
     doubleClicked = false;
     justPressed = true;
     lastDebounce = currentMillis - previousMillis;
-    everSince = currentMillis;
+    if (lastDebounce >= 100) {
+      everSince = currentMillis;
+    }
+    if (lastDebounce > 400) {
+      lightUp(LED_PIN1);
+      curIndex = 0;
+    }
   } else {
     previousMillis = currentMillis;
     if (lastDebounce >= 100 && lastDebounce <= 400) {
@@ -46,10 +51,7 @@ void loop() {
       if (curIndex >= 2) {
         curIndex = 0;
         doubleClicked = true;
-        firstEncounter = false;
       }
-    } else if (lastDebounce > 400) {
-      lightUp(LED_PIN1);
     }
   }
   if ((currentMillis - everSince) > 500) {
