@@ -11,7 +11,7 @@
 
 ## Demo
 <p align="center">
-  <img src="./demo.gif" alt="Video Demonstration" width="1000">
+  <img src="./demo.gif" alt="Video Demonstration" width="700">
 </p>
 
 ### Demo Context
