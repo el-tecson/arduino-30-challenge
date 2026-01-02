@@ -10,7 +10,9 @@
 ![Schematics](./schematics.jpg)
 
 ## Demo
-![Video Demonstration](./demo.gif)
+<p align="center">
+  <img src="./demo.gif" alt="Video Demonstration" width="1000">
+</p>
 
 ### Demo Context
 - Sped up 2x to show that PWM Led 1 actually changes brightness without the demo file taking too much storage
