@@ -49,7 +49,7 @@ void setup() {
   }
   for (int i = 0; i < NUM_LEDS; i++) {
     pinMode(ledPins[i], OUTPUT);
-    analogWrite(ledPins[i], ledStates[i]);
+    digitalWrite(ledPins[i], ledStates[i]);
   }
   pinMode(BUZZER, OUTPUT);
   digitalWrite(BUZZER, buzzerState);
