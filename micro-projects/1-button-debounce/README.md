@@ -11,7 +11,9 @@
 ![Schematics](./schematics.jpg)
 
 ## Demo
-![Video Demonstration](./demo.gif)
+<p align="center">
+  <img src="./demo.gif" alt="Video Demonstration" width="500">
+</p>
 
 ### Demo Context
 - LED classification:
