@@ -5,7 +5,6 @@
 
 ## Circuit
 ![Circuit](./circuit.png)
-*(not 100% accurate since TinkerCad doesn't have the right ball switch or tilt switch)*
 
 ## Schematics
 ![Schematics](./schematics.jpg)
