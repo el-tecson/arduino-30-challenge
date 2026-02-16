@@ -1,4 +1,4 @@
-### 5. Non-blocking buzzer alert patterns
+# 5. Non-blocking buzzer alert patterns
 
 * Info / warning / error tones
 * Triggered by button
