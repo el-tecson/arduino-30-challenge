@@ -10,7 +10,7 @@ const int ledPins[NUM_LEDS] = { LED1, LED2, LED3, LED4, LED5 };
 
 // VALUES THRESHOLD + HYSTERESIS
 constexpr int THRESHOLD_ON = 500;
-constexpr int THRESHOLD_OFF = 490;
+constexpr int THRESHOLD_OFF = 450;
 bool switched = false;
 
 // VALUES LED PATTERN
@@ -20,7 +20,7 @@ unsigned long ledDelay = 200;
 int litLed1 = 0;
 int litLed2 = 2;
 
-void start() {
+void setup() {
     pinMode(POTENTIOMETER, INPUT);
     for (int i = 0; i < NUM_LEDS; i++) {
         pinMode(ledPins[i], OUTPUT);
