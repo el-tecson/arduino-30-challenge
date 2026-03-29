@@ -1,9 +1,9 @@
 #define POTENTIOMETER A0
-constexpr int led1 = 3;
-constexpr int led2 = 5;
-constexpr int led3 = 6;
-constexpr int led4 = 9;
-constexpr int led5 = 10;
+constexpr int led1 = 2;
+constexpr int led2 = 4;
+constexpr int led3 = 7;
+constexpr int led4 = 8;
+constexpr int led5 = 12;
 const int NUM_LEDS = 5;
 const int ledPins[NUM_LEDS] = { led1, led2, led3, led4, led5 };
 
