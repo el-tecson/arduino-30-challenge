@@ -1,4 +1,4 @@
-### 8. Traffic-light controller
+# 8. Traffic-light controller
 
 * Red / Yellow / Green logic
 * Time-based transitions
