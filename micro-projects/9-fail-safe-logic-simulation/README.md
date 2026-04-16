@@ -27,4 +27,4 @@
 
 ## Solution
 - See the [code I made for this project](./solution.ino)
-- **Note:** I haven't tested the code yet.
+- **Note**: Started from the code of [micro-project 8](../8-traffic-light-controller/README.md). Code hasn't yet been tested.
